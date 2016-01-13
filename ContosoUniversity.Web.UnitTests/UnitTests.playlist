@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="ContosoUniversity.Web.UnitTests.DepartmentTests.Delete" /><Add Test="ContosoUniversity.Web.UnitTests.DepartmentTests.Create" /></Playlist>

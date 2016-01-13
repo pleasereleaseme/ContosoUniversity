@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="ContosoUniversity.Web.AutoTests.DepartmentTests.Can_Create_Departmemt" /><Add Test="ContosoUniversity.Web.AutoTests.DepartmentTests.Can_Navigate_To_Departments" /></Playlist>
