@@ -1,2 +1,1 @@
-ContosoUniversity
-Contoso University sample project to accompany http://pleasereleaseme.net/continuous-delivery-with-tfs-vsts/ blog post series
+This is the Contoso University sample project to accompany the http://pleasereleaseme.net/continuous-delivery-with-tfs-vsts/ blog post series
