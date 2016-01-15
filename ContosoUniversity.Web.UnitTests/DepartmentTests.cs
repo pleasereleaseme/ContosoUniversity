@@ -9,9 +9,11 @@ using System.Threading.Tasks;
 using Moq;
 using ContosoUniversity.Web.DAL;
 using ContosoUniversity.Web.Controllers;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ContosoUniversity.Web.UnitTests
 {
+    [ExcludeFromCodeCoverage]
     [TestClass]
     public class DepartmentTests
     {
