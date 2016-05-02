@@ -67,7 +67,7 @@
     <Folder Include="ReferenceData" />
     <Folder Include="Security" />
     <Folder Include="Security\Database Roles" />
-    <Folder Include="Scripts" />
+    <Folder Include="Deploy" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Course.sql" />
@@ -81,6 +81,9 @@
     <Build Include="dbo\Stored Procedures\Department_Delete.sql" />
     <Build Include="Security\Database Roles\db_webapp.sql" />
     <Build Include="Security\Database Roles\db_webapp_permissions.sql" />
+    <None Include="Deploy\Create login and database user.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="CU-DEV.publish.xml" />
@@ -90,7 +93,10 @@
     <None Include="ReferenceData\Enrollment.data.sql" />
     <None Include="ReferenceData\OfficeAssignment.data.sql" />
     <None Include="ReferenceData\Person.data.sql" />
-    <None Include="Scripts\Create login and database user.sql">
+    <None Include="Deploy\Database.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Deploy\DbDscResources.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
