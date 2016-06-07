@@ -86,7 +86,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CU-DEV.publish.xml" />
+    <None Include="ContosoUniversity.publish.xml" />
     <None Include="ReferenceData\Course.data.sql" />
     <None Include="ReferenceData\CourseInstructor.data.sql" />
     <None Include="ReferenceData\Department.data.sql" />
