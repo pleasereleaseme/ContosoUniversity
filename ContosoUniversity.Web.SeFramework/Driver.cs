@@ -13,7 +13,7 @@ namespace ContosoUniversity.Web.SeFramework
         {
             get
             {
-                var url = "ALMWEB01/CU-DAT";
+                var url = "PRM-DAT-AIO"; //Update this for your target node
 #if DEBUG
                 url = "localhost:41787";
 #endif       

@@ -15,7 +15,7 @@ namespace ContosoUniversity.Web.AutoTests
         }
 
         [TestMethod]
-        public void Can_Create_Departmemt()
+        public void Can_Create_Department()
         {
             var departmentName = Guid.NewGuid().ToString();
 
