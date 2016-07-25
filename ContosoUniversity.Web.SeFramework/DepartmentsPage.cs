@@ -5,12 +5,14 @@ namespace ContosoUniversity.Web.SeFramework
 {
     public class DepartmentsPage
     {
-        public static void GoTo()
+        public static DepartmentsPage NavigateTo()
         {
             Driver.Instance.Navigate().GoToUrl("http://" + Driver.BaseAddress + "/Department");
+
+            return new DepartmentsPage();
         }
 
-        public static string Name
+        public string Name
         {
             get
             {
@@ -21,7 +23,7 @@ namespace ContosoUniversity.Web.SeFramework
             }
         }
 
-        public static bool DoesDepartmentExistWithName(string name)
+        public bool DoesDepartmentExistWithName(string name)
         {
             var bodyTag = Driver.Instance.FindElement(By.TagName("body"));
 
