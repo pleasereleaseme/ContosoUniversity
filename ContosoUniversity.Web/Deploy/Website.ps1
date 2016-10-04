@@ -6,7 +6,9 @@ param(
     [Parameter(Position=2)]
 	[string]$domainUserForIntegratedSecurityPassword,
     [Parameter(Position=3)]
-	[string]$sqlServerName
+	[string]$sqlServerName,
+    [Parameter(Position=4)]
+	[string]$InstrumentationKey
 )
 
 # Password parameters included intentionally to check for environment cloning errors where failure to explicitly set the password
@@ -14,6 +16,7 @@ param(
 Write-Verbose "The value of parameter `$domainUserForIntegratedSecurityLogin is $domainUserForIntegratedSecurityLogin" -Verbose
 Write-Verbose "The value of parameter `$domainUserForIntegratedSecurityPassword is $domainUserForIntegratedSecurityPassword" -Verbose
 Write-Verbose "The value of parameter `$sqlServerName is $sqlServerName" -Verbose
+Write-Verbose "The value of parameter `$InstrumentationKey is $InstrumentationKey" -Verbose
 
 $domainUserForIntegratedSecurityCredential = New-Object System.Management.Automation.PSCredential ($domainUserForIntegratedSecurityLogin, (ConvertTo-SecureString -String $domainUserForIntegratedSecurityPassword -AsPlainText -Force))
 
@@ -28,6 +31,7 @@ $configurationData =
             SqlServerName = $sqlServerName
             PSDscAllowDomainUser = $true
             PSDscAllowPlainTextPassword = $true
+            InstrumentationKey = $InstrumentationKey
         }		
     )
 }
@@ -73,7 +77,7 @@ Configuration Web
         xTokenize ReplaceWebConfigTokens
         {
             Recurse = $false
-            Tokens = @{DATA_SOURCE = $Node.SqlServerName; INITIAL_CATALOG = "ContosoUniversity"}         
+            Tokens = @{DATA_SOURCE = $Node.SqlServerName; INITIAL_CATALOG = "ContosoUniversity"; IKEY = $Node.InstrumentationKey}         
             UseTokenFiles = $false
             Path = "C:\temp\website"
             SearchPattern = "web.config"
