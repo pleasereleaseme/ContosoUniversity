@@ -1,7 +1,0 @@
-﻿CREATE USER [webapp]
-	WITHOUT LOGIN
-	WITH DEFAULT_SCHEMA = dbo
-
-GO
-
-GRANT CONNECT TO [db_webapp]
