@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  contosouniversity.database:
+    image: contosouniversity.database
+    build: .\ContosoUniversity.Database
+
+  contosouniversity.web:
+    image: contosouniversity.web
+    build: .\ContosoUniversity.Web
+    depends_on:
+      - contosouniversity.database

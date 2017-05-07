@@ -93,6 +93,10 @@
     <None Include="ReferenceData\Enrollment.data.sql" />
     <None Include="ReferenceData\OfficeAssignment.data.sql" />
     <None Include="ReferenceData\Person.data.sql" />
+    <None Include="Dockerfile" />
+    <None Include=".dockerignore">
+      <DependentUpon>Dockerfile</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />

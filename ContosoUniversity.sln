@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ContosoUniversity.Database", "ContosoUniversity.Database\ContosoUniversity.Database.sqlproj", "{37CF5093-7D27-4982-BD24-C7C7960BFBD9}"
 EndProject
@@ -11,6 +11,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity.Web.SeFramework", "ContosoUniversity.Web.SeFramework\ContosoUniversity.Web.SeFramework.csproj", "{5516D80A-F287-43BC-BB32-AA032AB12F5C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity.Web.AutoTests", "ContosoUniversity.Web.AutoTests\ContosoUniversity.Web.AutoTests.csproj", "{941E08BC-B5F7-4335-A39F-FD09ED363450}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0185D626-839B-4BB4-A48D-3ED6341A2005}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +42,10 @@ Global
 		{941E08BC-B5F7-4335-A39F-FD09ED363450}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{941E08BC-B5F7-4335-A39F-FD09ED363450}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{941E08BC-B5F7-4335-A39F-FD09ED363450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0185D626-839B-4BB4-A48D-3ED6341A2005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0185D626-839B-4BB4-A48D-3ED6341A2005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0185D626-839B-4BB4-A48D-3ED6341A2005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0185D626-839B-4BB4-A48D-3ED6341A2005}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
