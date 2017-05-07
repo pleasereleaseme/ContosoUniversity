@@ -4,7 +4,7 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>ContosoUniversity</TargetDatabaseName>
     <DeployScriptFileName>ContosoUniversity.Database.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=(localdb)\MSSQLLocalDB;Integrated Security=True;Pooling=False</TargetConnectionString>
+    <TargetConnectionString>Data Source=172.22.239.17;Persist Security Info=True;User ID=sa;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
   </PropertyGroup>
 </Project>
